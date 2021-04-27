@@ -1,0 +1,85 @@
+@import url(./reset.css);
+@import url(../fonts/Lato/Lato-Regular.ttf);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css);
+/* === Small CSS Reset === */
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *::after, *::before{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/* for the back to top button */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "lato", sans-serif;
+    background-color:#000000;
+}
+
+header{
+    margin-top: 2rem;
+}
+
+button i{
+    font-size: 5rem;
+    color:#ffa500;
+    position: fixed;
+    z-index: 1000;
+    bottom: 3rem;
+    right: 3rem;
+}
+
+button i>p.invisible{
+    display: none;
+}
+/* Ganz Oben */
+header h3{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 200;
+}
+.top hr{
+    background-color:#ffa500;
+    border: none;
+    color: #333;
+    height: 2px;
+    width: 80vw;
+}
+.top{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 auto;
+    width: 80vw;
+}
+header nav{
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+header nav a{
+    font-size: 2.5rem;
+    list-style: none;
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+}
